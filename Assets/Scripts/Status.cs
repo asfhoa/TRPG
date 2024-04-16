@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,15 +6,15 @@ using UnityEngine;
 public class Status
 {
     public float hp;
+    public float attack;
+    public float defense;
     public float speed;
-    public float damage;
-    public float defanse;
 
-    public Status(float hp, float speed, float damage, float defance)
+    public Status(float hp, float attack, float defense, float speed)
     {
         this.hp = hp;
+        this.attack = attack;
+        this.defense = defense;
         this.speed = speed;
-        this.damage = damage;
-        this.defanse = defance;
     }
 }

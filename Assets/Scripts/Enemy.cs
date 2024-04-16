@@ -4,18 +4,17 @@ using UnityEngine;
 
 public class Enemy : Character
 {
-    public override bool SkillE()
-    {
-        throw new System.NotImplementedException();
-    }
-
+    public override bool IsPlayable => false;
     public override bool SkillQ()
     {
-        throw new System.NotImplementedException();
+        return false;
     }
-
+    public override bool SkillE()
+    {
+        return false;
+    }
     public override bool SkillR()
     {
-        throw new System.NotImplementedException();
+        return false;
     }
 }

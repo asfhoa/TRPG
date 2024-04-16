@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Playable : Character
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
+    public override bool IsPlayable => true;
+    public override bool SkillQ()
     {
-        
+        return false;
+    }
+    public override bool SkillE()
+    {
+        return false;
+    }
+    public override bool SkillR()
+    {
+        return false;
     }
 }
